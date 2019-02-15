@@ -1,0 +1,434 @@
+{
+	"id": "e99fc561-3d36-4873-92f5-6d741e644697",
+	"name": "customers",
+	"allTests": [],
+	"timestamp": "2019-02-15T08:35:37.856Z",
+	"collection_id": "9b6e1c05-9efb-4863-b5b5-edb32011513b",
+	"folder_id": 0,
+	"target_type": "collection",
+	"environment_id": "5830dd25-d12e-41e9-99e6-4da66121718f",
+	"data": [],
+	"delay": 0,
+	"count": 1,
+	"collection": {
+		"id": "9b6e1c05-9efb-4863-b5b5-edb32011513b",
+		"name": "customers",
+		"description": null,
+		"auth": null,
+		"events": null,
+		"variables": null,
+		"order": [
+			"5827faff-0b08-4d4c-b94b-ec2569c43419",
+			"1f872691-7556-41cc-9bd8-abc5ae0f6b5d",
+			"3ebce011-6e67-4ab6-93e0-71c6aaa85622",
+			"4af19784-bbcf-49c0-89aa-e33d4c11b008",
+			"ea489bee-71e3-497a-a17f-5ca00417f8e7",
+			"e19e6ca8-a851-4361-a993-32f791c8960e"
+		],
+		"folders_order": [],
+		"owner": "0",
+		"permissions": {},
+		"favorite": false,
+		"shared": false,
+		"type": "collection",
+		"depth": 0
+	},
+	"folder": null,
+	"environment": null,
+	"globals": null,
+	"results": [
+		{
+			"name": "create customer",
+			"id": "5827faff-0b08-4d4c-b94b-ec2569c43419",
+			"url": "http://localhost:2019/customers",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 201,
+				"name": "Created",
+				"detail": {
+					"name": "Created",
+					"detail": "The request has been fulfilled and resulted in a new resource being created."
+				}
+			},
+			"tests": {
+				"name": "should response success(201) and object of customer",
+				"status": "pass",
+				"error": null,
+				"Status code is 201 or 202": true
+			},
+			"testPassFailCounts": {
+				"should response success(201) and object of customer": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 201 or 202": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"763"
+			],
+			"allTests": [
+				{
+					"should response success(201) and object of customer": true,
+					"Status code is 201 or 202": true
+				}
+			],
+			"time": "763",
+			"totalRequestTime": "763",
+			"iterationResults": {}
+		},
+		{
+			"name": "get latest customer",
+			"id": "1f872691-7556-41cc-9bd8-abc5ae0f6b5d",
+			"url": "http://localhost:2019/customers/14",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"name": "Status code is 200",
+				"status": "pass",
+				"error": null,
+				"should response object of latest customer": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"should response object of latest customer": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"630"
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"should response object of latest customer": true
+				}
+			],
+			"time": "630",
+			"totalRequestTime": "630",
+			"iterationResults": {}
+		},
+		{
+			"name": "get all customers",
+			"id": "3ebce011-6e67-4ab6-93e0-71c6aaa85622",
+			"url": "http://localhost:2019/customers",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"name": "Status code is 200",
+				"status": "pass",
+				"error": null,
+				"should response success(200) and object of latest customer": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"should response success(200) and object of latest customer": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"868"
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"should response success(200) and object of latest customer": true
+				}
+			],
+			"time": "868",
+			"totalRequestTime": "868",
+			"iterationResults": {}
+		},
+		{
+			"name": "update latest customer",
+			"id": "4af19784-bbcf-49c0-89aa-e33d4c11b008",
+			"url": "http://localhost:2019/customers/14",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"name": "Status code is 200",
+				"status": "pass",
+				"error": null,
+				"should response success(200) and object of customer": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"should response success(200) and object of customer": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"889"
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"should response success(200) and object of customer": true
+				}
+			],
+			"time": "889",
+			"totalRequestTime": "889",
+			"iterationResults": {}
+		},
+		{
+			"name": "delete latest customer",
+			"id": "ea489bee-71e3-497a-a17f-5ca00417f8e7",
+			"url": "http://localhost:2019/customers/14",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"name": "Status code is 200",
+				"status": "pass",
+				"error": null,
+				"should response success(200) and object of customer": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"should response success(200) and object of customer": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"624"
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"should response success(200) and object of customer": true
+				}
+			],
+			"time": "624",
+			"totalRequestTime": "624",
+			"iterationResults": {}
+		},
+		{
+			"name": "Bonus middleware check Autorization",
+			"id": "e19e6ca8-a851-4361-a993-32f791c8960e",
+			"url": "http://localhost:2019/customers",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized",
+				"detail": {
+					"name": "Unauthorized",
+					"detail": "Similar to 403 Forbidden, but specifically for use when authentication is possible but has failed or not yet been provided. The response must include a WWW-Authenticate header field containing a challenge applicable to the requested resource."
+				}
+			},
+			"tests": {
+				"name": "Status code is 401 Unauthorized",
+				"status": "pass",
+				"error": null
+			},
+			"testPassFailCounts": {
+				"Status code is 401 Unauthorized": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"4"
+			],
+			"allTests": [
+				{
+					"Status code is 401 Unauthorized": true
+				}
+			],
+			"time": "4",
+			"totalRequestTime": "4",
+			"iterationResults": {}
+		}
+	],
+	"totalPass": 11,
+	"totalFail": 0,
+	"totalTime": 3778,
+	"lifecycle": "done",
+	"requests": [
+		{
+			"name": "create customer",
+			"id": "5827faff-0b08-4d4c-b94b-ec2569c43419",
+			"url": "http://localhost:2019/customers",
+			"time": "2019-02-15T08:35:37.856Z",
+			"responseCode": {
+				"code": 201,
+				"name": "Created",
+				"detail": {
+					"name": "Created",
+					"detail": "The request has been fulfilled and resulted in a new resource being created."
+				}
+			},
+			"testPassFailCounts": {
+				"should response success(201) and object of customer": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 201 or 202": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "get latest customer",
+			"id": "1f872691-7556-41cc-9bd8-abc5ae0f6b5d",
+			"url": "http://localhost:2019/customers/14",
+			"time": "2019-02-15T08:35:37.856Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"should response object of latest customer": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "get all customers",
+			"id": "3ebce011-6e67-4ab6-93e0-71c6aaa85622",
+			"url": "http://localhost:2019/customers",
+			"time": "2019-02-15T08:35:37.856Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"should response success(200) and object of latest customer": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "update latest customer",
+			"id": "4af19784-bbcf-49c0-89aa-e33d4c11b008",
+			"url": "http://localhost:2019/customers/14",
+			"time": "2019-02-15T08:35:37.856Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"should response success(200) and object of customer": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "delete latest customer",
+			"id": "ea489bee-71e3-497a-a17f-5ca00417f8e7",
+			"url": "http://localhost:2019/customers/14",
+			"time": "2019-02-15T08:35:37.856Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"should response success(200) and object of customer": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "Bonus middleware check Autorization",
+			"id": "e19e6ca8-a851-4361-a993-32f791c8960e",
+			"url": "http://localhost:2019/customers",
+			"time": "2019-02-15T08:35:37.856Z",
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized",
+				"detail": {
+					"name": "Unauthorized",
+					"detail": "Similar to 403 Forbidden, but specifically for use when authentication is possible but has failed or not yet been provided. The response must include a WWW-Authenticate header field containing a challenge applicable to the requested resource."
+				}
+			},
+			"testPassFailCounts": {
+				"Status code is 401 Unauthorized": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		}
+	],
+	"synced": false
+}
